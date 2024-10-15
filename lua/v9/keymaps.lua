@@ -14,6 +14,11 @@ set.shiftwidth = 4
 set.shiftround = true
 set.expandtab = true
 
+
+-- You can add your keybindings here or other copilot configurations
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
 -- Navigate between buffers
 vim.api.nvim_set_keymap('n', '<S-l>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-h>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })

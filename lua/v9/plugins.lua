@@ -13,8 +13,17 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
+    use "github/copilot.vim"
     -- My plugins here
-    use 'tpope/vim-fugitive'
+    -- use 'tpope/vim-fugitive'
+     use {
+        'NeogitOrg/neogit',
+        requires = {
+        'nvim-lua/plenary.nvim',
+        'sindrets/diffview.nvim',
+        'nvim-tree/nvim-web-devicons'
+        }
+    }
     use "sindrets/diffview.nvim" 
     use {'akinsho/bufferline.nvim', tag = "v4.*"}
     use 'ellisonleao/gruvbox.nvim'
