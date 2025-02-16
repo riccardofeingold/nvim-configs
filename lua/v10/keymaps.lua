@@ -17,8 +17,8 @@ set.expandtab = true
 
 
 -- -- You can add your keybindings here or other copilot configurations
--- vim.g.copilot_no_tab_map = true
--- vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 
 -- -- Navigate between buffers
 vim.opt.termguicolors = true
